@@ -1,38 +1,160 @@
-.App {
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.controlBox {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 5vh;
+}
+
+.controlBox > button {
+  flex: 1;
+
+}
+
+.inputQuarters, .renderQuarters {
+  width: calc(50% - 1px);
+  
+}
+
+.displayFull {
+  width: 100vw;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.displayFull > img {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.overlay > * {
+  position: absolute;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.overlay > .HTMLRender {
+  width: 100%;
+  opacity: 0.4;
+
 }
 
-.App-link {
-  color: #61dafb;
+.overlay > img {
+  opacity: 0.6;
+  left: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.renderBox, .inputsToRender {
+  flex: 1;
+  height: 95vh;
+  bottom: 0;
 }
+
+.renderBox.renderQuarters {
+  right: 0;
+  overflow: hidden;
+}
+
+.renderBox.renderQuarters > * {
+  margin: auto;
+  max-height: 50%;
+}
+
+.renderBox > button {
+  width: 100%;
+}
+
+.renderQuarters > div > img {
+  overflow-y: scroll;
+}
+
+.inputsToRender {
+  left: 0;
+  border-right: black 3px solid;
+}
+
+.textbox {
+  resize: none;
+  outline: none;
+  width: calc(100% - 18px);
+  height: calc(100% - 18px );
+  background-color: black;
+  color: lime;
+  font-size: 14px;
+  padding: 9px;
+  white-space: nowrap;
+}
+
+.imgCorner {
+  width: 50vw;
+  height: 50vw;
+}
+
+.tempImg > img {
+  width: 100%;
+}
+
+.tempImg, .renderQuarters .touch{
+  -webkit-transform: scale(.5);  
+  -webkit-transform-origin: top left;
+}
+
+.tempImg, .touch {
+  height: 95vh;
+  width: 100vw;
+
+  overflow: scroll;
+  overflow-x: hidden;
+  border-bottom: black 7px solid;
+}
+
+.imgCorner {
+  border-bottom: black 2px solid;
+
+}
+
+.inputsToRender > div > .textbox::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar {
+  width: 28px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(11, 5, 51);
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:rgb(18, 10, 74);
+
+}
+
+.HTMLRender {
+  min-height: 50%;
+}
+
+
+.inputsToRender > div {
+  width: 100%;
+  height: 50%;
+}
+
+.inputsToRender > div > button {
+  width: 100%;
+  height: 20px;
+}
+
+.inputsToRender > div > * {
+  margin: 0;
+
+  display: block;
+}
+
+

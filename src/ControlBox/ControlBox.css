@@ -1,0 +1,7 @@
+.controlBox > button {
+    background-color: rgb(18, 10, 74);
+    color: white;
+    border: white 1px solid;
+    border-radius: 2px;
+    cursor: pointer;
+}

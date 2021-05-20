@@ -5,6 +5,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+html,body {
+  margin:0;
+  padding:0;
+}
+
+
+.center {
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
 
 code {
