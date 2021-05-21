@@ -11,7 +11,7 @@ class ControlBox extends React.Component {
     }
 
     projectSite = () => {
-        window.open("https://github.com/MichaelC1999/CSS-Practice-Engine", '_blank');
+        window.open("https://github.com/MichaelC1999/Design-Practice-Engine", '_blank');
     }
 
     render() {
