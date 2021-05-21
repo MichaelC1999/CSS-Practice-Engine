@@ -2,7 +2,7 @@
   "name": "css-practice-engine",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://michaelc1999.github.io/CSS-Practice-Engine/",
+  "homepage": "https://michaelc1999.github.io/Design-Practice-Engine/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
